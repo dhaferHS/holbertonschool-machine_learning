@@ -6,8 +6,7 @@
 def poly_integral(poly, C=0):
     """ function that alculates the integral of a polynomial """
 
-    if not isinstance(poly, list) or not all
-    (isinstance(x, (int, float)) for x in poly) or not isinstance(C, int):
+    if not isinstance(poly, list) or not all(isinstance(x, (int, float)) for x in poly) or not isinstance(C, int):
         return None  # poly or C is not valid
     integral = [C]
     for i, coef in enumerate(poly):
