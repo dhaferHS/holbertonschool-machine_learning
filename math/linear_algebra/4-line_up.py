@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """ function that add two arrays """
+
+
 def add_arrays(arr1, arr2):
     """ add two arrays"""
     if len(arr1) != len(arr2):
