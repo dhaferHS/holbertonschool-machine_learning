@@ -4,7 +4,6 @@
 
 def mat_mul(mat1, mat2):
     """ multiplacate two matrices """
-    
     if len(mat1[0]) != len(mat2):
         return None
 
