@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""calculate the sape of a matrix """
+
+
 def np_shape(matrix):
     """
     Calculates the shape of a numpy.ndarray.
@@ -11,4 +14,3 @@ def np_shape(matrix):
     """
     shape = tuple(map(lambda x: matrix.shape[x], range(matrix.ndim)))
     return shape
-
