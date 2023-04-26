@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-import numpy as np
-
 def np_shape(matrix):
     """
     Calculates the shape of a numpy.ndarray.
@@ -11,5 +9,5 @@ def np_shape(matrix):
     Returns:
     - tuple of integers, the shape of the input array
     """
-    shape = tuple(np.array(matrix.shape))
+    shape = tuple(matrix.shape[i] for i in range(len(matrix.shape)))
     return shape
