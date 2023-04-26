@@ -9,5 +9,6 @@ def np_shape(matrix):
     Returns:
     - tuple of integers, the shape of the input array
     """
-    shape = tuple(matrix.shape[i] for i in range(len(matrix.shape)))
+    shape = tuple(map(lambda x: matrix.shape[x], range(matrix.ndim)))
     return shape
+
