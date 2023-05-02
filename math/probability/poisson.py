@@ -3,6 +3,8 @@
 class Poisson:
     def __init__(self, data=None, lambtha=1.):
         """Poisson that represents a poisson distribution of data """
+        
+        
         if data is None:
             if lambtha <= 0:
                 raise ValueError("lambtha must be a positive value")
