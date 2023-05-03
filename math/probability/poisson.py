@@ -30,7 +30,7 @@ class Poisson:
             return (((self.lambtha**k)*(e**(-self.lambtha))) / result)
 
     def cdf(self, k):
-        """caculate the value of the cdf for a given number of successes"""
+        """caculates the value of the cdf for a given number of successes"""
         k = int(k)
         if k < 0:
             return 0
