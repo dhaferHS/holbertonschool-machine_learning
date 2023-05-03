@@ -13,5 +13,5 @@ class Exponential:
             if not isinstance(data, list):
                 raise TypeError("data must be a list")
             if len(data) < 2:
-                raise ValueError("data must contain at least two values")
+                raise ValueError("data must contain multiple values")
             self.lambtha = 1.0 / (sum(data) / float(len(data)))
