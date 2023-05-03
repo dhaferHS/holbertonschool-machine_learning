@@ -8,7 +8,7 @@ class Exponential:
         self.lambtha = float(lambtha)
         if data is None:
             if lambtha <= 0.0:
-                raise ValueError("lamdtha must be a positive value")
+                raise ValueError("lambtha must be a positive value")
         else:
             if not isinstance(data, list):
                 raise TypeError("data must be a list")
