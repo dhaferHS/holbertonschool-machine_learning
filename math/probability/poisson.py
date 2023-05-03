@@ -28,3 +28,12 @@ class Poisson:
             for i in range(1, k+1):
                 result = result * i
             return (((self.lambtha**k)*(e**(-self.lambtha))) / result)
+
+    def cdf(self, k):
+        k = int(k)
+        if k < 0:
+            return 0
+        count = 0.0
+        for value in range(k + 1):
+            count += self.pmf(value)
+        return count
