@@ -28,4 +28,3 @@ class Normal:
     def x_value(self, z):
         """calculate the x value for a normal distribution probability"""
         return z * self.stddev + self.mean
-        
