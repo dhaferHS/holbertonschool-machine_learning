@@ -5,6 +5,8 @@
 class Exponential:
     """Exponential distribution class"""
     def __init__(self, data=None, lambtha=1.):
+        """Exponential distribution class initialization for a given data"""
+
         self.lambtha = float(lambtha)
         if data is None:
             if lambtha <= 0.0:
@@ -17,6 +19,8 @@ class Exponential:
             self.lambtha = 1.0 / (sum(data) / float(len(data)))
     
     def pdf(self, x):
+        """Exponential function to calculate the pdf"""
+
         e = 2.7182818285
         if x < 0:
             return 0
