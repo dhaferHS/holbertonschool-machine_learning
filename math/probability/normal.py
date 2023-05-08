@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
+"""class normal propability"""
+
 
 class Normal:
     """class for normal distribution"""
-    
+
     def __init__(self, data=None, mean=0., stddev=1.):
         """initialize the normal distribution"""
         if data is None:
