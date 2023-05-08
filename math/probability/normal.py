@@ -20,7 +20,7 @@ class Normal:
             self.mean = sum(data) / len(data)
             rs = (sum([(x - self.mean) ** 2 for x in data]) / len(data)) ** 0.5
             self.stddev = rs
-    
+
     def z_score(self, x):
         """calculate the z score for a normal distribution probability"""
         return (x - self.mean) / self.stddev
