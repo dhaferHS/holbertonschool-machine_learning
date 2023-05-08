@@ -28,6 +28,7 @@ class Exponential:
     
     def cdf(self, x):
         """calculate the number of cdf of a given time period"""
+        
         e = 2.7182818285
         if x < 0:
             return 0
