@@ -30,6 +30,7 @@ class Normal:
         return z * self.stddev + self.mean
 
     def pdf(self, x):
+        """calculate the propability density function"""
         pi = 3.1415926536
         e = 2.7182818285
         
