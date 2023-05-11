@@ -35,11 +35,12 @@ class Normal:
         e = 2.7182818285
         return (1 / (self.stddev * (2 * pi) ** 0.5)) *\
             e ** (-0.5 * ((x - self.mean) / self.stddev) ** 2)
- 
+
     def cdf(self, x):
         """calculate the cumultative distribution function"""
         pi = 3.1415926536
-        value = (x -self.mean) / ((2 ** 0.5) * self.stddev)
-        erf = (((4 / pi) ** 0.5) * (value - (value ** 3) / 3 + (value ** 5) / 10 - (value ** 7) / 42 + (value ** 9) / 216))
+        value = (x - self.mean) / ((2 ** 0.5) * self.stddev)
+        erf = (((4 / pi) ** 0.5) * (value - (value ** 3) 
+                                    / 3 + (value ** 5) / 10 - (value ** 7) / 42 + (value ** 9) / 216))
         cdf = (1 + erf) * 0.5
         return cdf
