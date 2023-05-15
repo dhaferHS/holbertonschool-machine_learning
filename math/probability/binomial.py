@@ -9,14 +9,13 @@ class Binomial:
         self.n = n
         self.p = p
         if data is None:
-            self.n = int (n)
+            self.n = int(n)
             if self.n <= 0:
                 raise ValueError("n must be a positive value")
             self.p = float(p)
             if p <= 0 or p >= 1:
                 raise ValueError("p must be greater than 0 and less than 1")
-        else:   
-            
+        else:
             if not isinstance(data, list):
                 raise TypeError("data must be a list")
             if len(data) < 2:
