@@ -1,4 +1,4 @@
-#!/us/bin/env python3
+#!/usr/bin/env python3
 """ file for binomial distribution tasks """
 
 
