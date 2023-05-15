@@ -37,3 +37,16 @@ class Binomial:
             for i in range(1, k + 1):
                 coef *= (self.n - i + 1) / i
             return (coef * (self.p ** k) * ((1 - self.p) ** (self.n - k)))
+
+    def cdf(self, k):
+        """cumulative distribution function"""
+        k = int(k)
+        if k < 0:
+            return 0
+        elif k >= self.n:
+            return 1
+        else:
+            cdf_val = 0
+            for i in range(k + 1):
+                cdf_val += self.pmf(i)
+            return cdf_val
