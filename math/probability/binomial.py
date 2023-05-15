@@ -13,6 +13,9 @@ class Binomial:
             if self.n <= 0:
                 raise ValueError("n must be a positive value")
             self.p = float(p)
+            
+            
+            
             if  not(0 <= self.p <= 1):
                 raise ValueError("p must be greater than 0 and less than 1")
         else:   
