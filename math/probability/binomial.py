@@ -20,7 +20,7 @@ class Binomial:
             if not isinstance(data, list):
                 raise TypeError("data must be a list")
             if len(data) < 2:
-                raise ValueError("data must be a list")
+                raise ValueError("data must contain multiple values")
             successes = sum(data) / len(data)
             trials = (sum([(x - successes) ** 2 for x in data]) / len(data))
             self.p = 1 - (trials / successes)
