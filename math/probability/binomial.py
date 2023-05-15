@@ -26,3 +26,14 @@ class Binomial:
             self.p = 1 - (trials / successes)
             self.n = round(successes / self.p)
             self.p = successes / self.n
+
+    def pmf(self, k):
+        """calculate mass function of a binomial distribution"""
+        k = int(k)
+        if k < 0 or k > self.n:
+            return 0
+        else:
+            coef = 1
+            for i in range(1, k + 1):
+                coef *= (self.n - i + 1) / i
+            return (coef * (self.p ** k) * ((1 - self.p) ** (self.n - k)))
