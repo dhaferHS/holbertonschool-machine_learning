@@ -4,7 +4,8 @@
 
 class Binomial:
     """class binomial distribution"""
-    def __init__(self, data = None, n = 1, p = 0.5):
+
+    def __init__(self, data=None, n=1, p=0.5):
         """initialize the binomial distribution"""
         self.n = n
         self.p = p
