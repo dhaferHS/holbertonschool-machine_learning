@@ -9,7 +9,8 @@ class Binomial:
         self.n = n
         self.p = p
         if data is None:
-            if self.n < 0:
+            self.n = int (n)
+            if self.n <= 0:
                 raise ValueError("n must be a positive value")
             if  not(0 <= self.p <= 1):
                 raise ValueError("p must be greater than 0 and less than 1")
