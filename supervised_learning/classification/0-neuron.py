@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""file fr a supervised neuron that recognise numbers using some trained data to predict the real value of eache image"""
+"""file for a supervised neuron that recognise numbers using some trained data"""
 import numpy as np
 
 
