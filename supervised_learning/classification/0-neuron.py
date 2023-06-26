@@ -14,11 +14,13 @@ class Neuron:
 
         elif nx < 1:
             raise ValueError("nx must be a positive integer")
-
+        """public instance"""
         self.W = np.random.randn(1, nx)
         self.b = 0
         self.A = 0
+        """private instance"""
+
         self.__w = np.random.randn(1, nx)
         self.__b = 0
         self.__A = 0
-        
+
