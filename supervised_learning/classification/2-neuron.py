@@ -38,8 +38,10 @@ class Neuron:
 
     def forward_prop(self, X):
         """creating public method for forword propagation"""
-        """calculating the forward propagation"""
-        Z = (self.__W * X) + self.__b
+        """calculating the forward propagation for the neuron"""
+        Z = np.dot(
+            self.__W,
+            X) + self.__b  # perform matrix multiplication between __w ( the weight of the neuron ) and  X THE INPUT data
         """creating and calcualtig the activation function for the neuron system"""
         self.__A = 1 / (1 + np.exp(-Z))
         return self.__A
