@@ -24,11 +24,11 @@ class Neuron:
         self.__b = 0
         self.__A = 0
 
-        def get_w(self):
+        def __get_w(self):
             return self.__w
 
-        def get_A(self):
+        def __get_A(self):
             return self.__A
 
-        def get_b(self):
+        def __get_b(self):
             return self.__b
