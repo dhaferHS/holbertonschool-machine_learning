@@ -41,7 +41,8 @@ class Neuron:
         """calculating the forward propagation for the neuron"""
         Z = np.dot(
             self.__W,
-            X) + self.__b  # perform matrix multiplication between __w ( the weight of the neuron ) and  X THE INPUT data
-        """creating and calcualtig the activation function for the neuron system"""
+            X) + self.__b  # perform matrix multiplication between __w 
+                               # ( the weight of neuron ) and  X THE INPUT data
+        """creating & calcualtig the activation function of system"""
         self.__A = 1 / (1 + np.exp(-Z))
         return self.__A
