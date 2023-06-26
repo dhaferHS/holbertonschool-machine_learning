@@ -14,21 +14,24 @@ class Neuron:
 
         elif nx < 1:
             raise ValueError("nx must be a positive integer")
-        """public instance"""
-        self.W = np.random.randn(1, nx)
-        self.b = 0
-        self.A = 0
+
         """private instance"""
 
-        self.__w = np.random.randn(1, nx)
+        self.__W = np.random.randn(1, nx)
         self.__b = 0
         self.__A = 0
 
-        def __get_w(self):
-            return self.__w
+    @property
+    def W(self):
+        """getter for W"""
+        return self.__W
 
-        def __get_A(self):
-            return self.__A
+    @property
+    def A(self):
+        """getter for A"""
+        return self.__A
 
-        def __get_b(self):
-            return self.__b
+    @property
+    def b(self):
+        """getter for b"""
+        return self.__b
