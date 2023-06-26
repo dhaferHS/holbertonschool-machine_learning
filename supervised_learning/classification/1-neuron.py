@@ -23,6 +23,12 @@ class Neuron:
         self.__w = np.random.randn(1, nx)
         self.__b = 0
         self.__A = 0
-        return self.__w
-        return self.__A
-        return self.__b
+
+        def get_w(self):
+            return self.__w
+
+        def get_A(self):
+            return self.__A
+
+        def get_b(self):
+            return self.__b
