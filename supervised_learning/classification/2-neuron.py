@@ -8,7 +8,7 @@ class Neuron:
 
     def __init__(self, nx):
         """initialisation of the supervised neuron"""
-
+        """nX number of input feature in neuron """
         if not isinstance(nx, int):
             raise TypeError("nx must be an integer")
 
@@ -16,11 +16,11 @@ class Neuron:
             raise ValueError("nx must be a positive integer")
 
         """declaring private instance attribute"""
-        """( the weight of neuron ) and  nX number ofinput feature in neuron """
+        """ the weight of neuron """
         self.__W = np.random.randn(1, nx)
         """b is for the bias of the neuron"""
         self.__b = 0
-        """activated output  of the neuron """
+        """A is the activated output  of the neuron """
         self.__A = 0
 
     @property
@@ -38,12 +38,13 @@ class Neuron:
         """getter for b"""
         return self.__b
 
+    """creating public method for forword propagation"""
+
     def forward_prop(self, X):
-        """creating public method for forword propagation"""
         """calculating the forward propagation for the neuron"""
         """perform matrix multiplication between __w and x"""
         Z = np.dot(self.__W, X) + self.__b
 
-        """creating & calcualtig the activation function of system"""
+        """calcualtig the sigmoid activation function for neuron"""
         self.__A = 1 / (1 + np.exp(-Z))
         return self.__A
