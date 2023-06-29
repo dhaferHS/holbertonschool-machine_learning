@@ -51,7 +51,12 @@ class Neuron:
 
     """calculate the coast of a the model using logistic regression"""
 
+    """creating a public methode to calculate the cost"""
+    """cost is the same as loss function"""
+
     def cost(self, Y, A):
+        """m is number of examples in inpute data"""
         m = Y.shape[1]
-        cost = -(1 / m) * np.sum(Y * np.log(A) + (1 - Y) * np.log(1.0000001 - A))
+        cost = -(1 / m) * np.sum(Y * np.log(A) +
+                                 (1 - Y) * np.log(1.0000001 - A))
         return cost
