@@ -57,6 +57,7 @@ class Neuron:
     def cost(self, Y, A):
         """m is number of examples in inpute data"""
         m = Y.shape[1]
+        """ we use log to stabilise calculation specially with with small values"""
         cost = -(1 / m) * np.sum(Y * np.log(A) +
                                  (1 - Y) * np.log(1.0000001 - A))
         return cost
