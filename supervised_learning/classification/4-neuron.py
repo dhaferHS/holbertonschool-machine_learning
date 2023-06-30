@@ -57,7 +57,7 @@ class Neuron:
     def cost(self, Y, A):
         """m is number of examples in inpute data"""
         m = Y.shape[1]
-        """ we use log to stabilise calculation specially with with small values"""
+        """ we use log to stabilise calculation specially with small values"""
         costvalue = -(1 / m) * np.sum(Y * np.log(A) +
                                       (1 - Y) * np.log(1.0000001 - A))
         return costvalue
@@ -75,7 +75,7 @@ class Neuron:
         A = self.forward_prop(X)
         prediction = np.where(A >= 0.5, 1, 0)
         """we had to call for the A, and Y """
-        """cuz the cost works with  Y the argument the correct labes for the inpute data"""
-        """  A the activated outout of the neuron"""
+        """ Y the argument the correct labes for the inpute data"""
+        """ A the activated outout of the neuron"""
         costvalue = self.cost(Y, A)
         return prediction, costvalue
