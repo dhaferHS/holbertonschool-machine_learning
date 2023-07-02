@@ -111,7 +111,7 @@ class Neuron:
         db = (1 / m) * np.sum(dZ)
 
         """dW.T is the transpose for the gradien of the cost"""
-        """taking transpose is necessary for the matching the sahpe of weight"""
+        """taking transpose is necessary for  matching the sahpe of weight"""
 
         """alpha * dW.T scales the gradien form the learning rate"""
 
