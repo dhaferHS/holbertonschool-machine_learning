@@ -146,11 +146,25 @@ class Neuron:
             raise TypeError("alpha must be a float")
         if alpha <= 0:
             raise ValueError("alpha must be positive")
-
+        """nx is the number of input features to the neuron"""
+        """ m is number of exampels """
         nx, m = X.shape
+        """ durring each iteration """
+        """ the algorithm goes throught the entire training dataset """
+        """ 1 - forword propagation to obtain prediction  """
+        """ 2 - cost function for the predicition compared to actual labels """
+        """ 3 - update the models parameters using gradient descent """
+        """ REMINDER """
+        """ iteration can help the model to converge a better solution """
 
         A = self.forward_prop(X)  # Initialize A before the loop
 
+        """ x contains the input data"""
+        """ Y contaisn the example for the correct labels for inputs data"""
+        """ A is the activated output of the neuron """
+
+        """ iterations in number to train over"""
+        """ alpha is the training rate"""
         for i in range(iterations):
             A = self.forward_prop(X)
             self.gradient_descent(X, Y, A, alpha)
