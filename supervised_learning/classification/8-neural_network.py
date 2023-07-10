@@ -2,6 +2,7 @@
 """ neural network """
 import numpy as np
 
+
 # a class for the neural network from scratch
 class NeuralNetwork:
     """ initializing everything in the neural network """
