@@ -10,18 +10,15 @@ class NeuralNetwork:
     """ initializing everything in the neural network """
 
 
-    """ a public method iinitialization """
-
-    def __init__(self, nx, nodes):
-        """ nx is the number of inpute data """
-
+    def __init__(self, nx, nodes): #a public method iinitialization
+        #nx is the number of inpute data
         if not isinstance(nx, int):
             raise TypeError("nx must be an integer")
         elif nx < 1:
             raise ValueError("nx must be a positive integer")
         
         
-            """ nodes is the number of nodes found in the hiden layer """
+        """ nodes is the number of nodes found in the hiden layer """
 
         if not isinstance(nodes, int):
             raise TypeError("nodes must be an integer")
