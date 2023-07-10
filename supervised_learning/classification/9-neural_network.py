@@ -33,7 +33,6 @@ class NeuralNetwork:
         self.__b2 = 0
         self.__A2 = 0
 
-
     @property
     def W1(self):
         """getter for w1"""
