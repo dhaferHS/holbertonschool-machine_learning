@@ -3,7 +3,6 @@
 import numpy as np
 
 
-
 class NeuralNetwork:
     """a class for the neural network from scratch"""
 
