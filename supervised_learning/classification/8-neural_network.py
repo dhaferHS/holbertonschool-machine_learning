@@ -25,6 +25,8 @@ class NeuralNetwork:
         """ w1 is the connection between the inpute and the hiden layer """
         self.W1 = np.random.randn(nodes, nx)
         self.b1 = np.zeros((nodes, 1))
+        """ we initialize b1 as an array of zeros with shape(nodes, a)"""
+        """that allows the neurol network to learn from biases for each node"""
         self.A1 = 0
         """ w2  is the connection between the hiden layer and the output"""
         self.W2 = np.random.randn(1, nodes)
