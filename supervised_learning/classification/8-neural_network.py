@@ -13,13 +13,13 @@ class NeuralNetwork:
         """ nx is the number of inpute data """
         if not isinstance(nx, int):
             raise TypeError("nx must be an integer")
-        if nx < 1:
+        elif nx < 1:
             raise ValueError("nodes must be a positive integer")
             """ nodes is the number of nodes found in the hiden layer """
 
         if not isinstance(nodes, int):
             raise TypeError("nodes must be an integer")
-        if nodes < 1:
+        elif nodes < 1:
             raise ValueError("nodes must be a positive integer")
 
         """ the weights vector for the hiden layer"""
