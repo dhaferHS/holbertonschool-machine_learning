@@ -14,10 +14,12 @@ class NeuralNetwork:
 
     def __init__(self, nx, nodes):
         """ nx is the number of inpute data """
+
         if not isinstance(nx, int):
             raise TypeError("nx must be an integer")
         elif nx < 1:
-            raise ValueError("nodes must be a positive integer")
+            raise ValueError("nx must be a positive integer")
+        
         
             """ nodes is the number of nodes found in the hiden layer """
 
