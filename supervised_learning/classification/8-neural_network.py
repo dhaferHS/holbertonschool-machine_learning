@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
+""" neural network """
 import numpy as np
 
 """ creating a class for the neural network from scratch """
+
 
 
 class NeuralNetwork:
