@@ -9,6 +9,7 @@ import numpy as np
 class NeuralNetwork:
     """ initializing everything in the neural network """
 
+
     """ a public method iinitialization """
 
     def __init__(self, nx, nodes):
@@ -17,6 +18,7 @@ class NeuralNetwork:
             raise TypeError("nx must be an integer")
         elif nx < 1:
             raise ValueError("nodes must be a positive integer")
+        
             """ nodes is the number of nodes found in the hiden layer """
 
         if not isinstance(nodes, int):
